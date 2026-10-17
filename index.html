@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0A0A12">
+<title>Eco · tu memoria de bolsillo</title>
+<meta name="description" content="Eco es una app personal de Leonardo Vega (Black Hole Code) que anota tareas, fechas e ideas de los momentos que él decide guardar, y las organiza en su propia laptop.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23100D24'/%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%236B5BF5' stroke-opacity='.45' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%23B8AEFF' stroke-width='1.8'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Ir al contenido</a>
+
+<header class="envoltura cabecera">
+  <a class="marca" href="./" aria-label="Eco, inicio">
+    <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="none" stroke="#6B5BF5" stroke-opacity=".45" stroke-width="1.6"/><circle cx="22" cy="22" r="13" fill="none" stroke="#B8AEFF" stroke-width="2"/><circle cx="22" cy="22" r="5" fill="#fff"/></svg>
+    Eco
+  </a>
+  <nav class="nav" aria-label="Principal">
+    <a href="./" aria-current="page">Inicio</a>
+    <a href="privacidad.html">Privacidad</a>
+    <a href="terminos.html">Términos</a>
+  </nav>
+</header>
+
+<main id="contenido">
+  <section class="envoltura portada" aria-labelledby="titulo">
+    <span class="etiqueta">App personal · no está a la venta</span>
+    <h1 id="titulo">Eco<span>Tu memoria de bolsillo.</span></h1>
+    <p>Eco es una app personal hecha por Leonardo Vega (Black Hole Code). Guarda solo los momentos que él decide guardar y le deja anotadas las tareas, fechas e ideas importantes. Todo se procesa y se queda en su propia laptop.</p>
+    <div class="acciones">
+      <a class="boton principal" href="privacidad.html">Política de privacidad</a>
+      <a class="boton secundario" href="#google">Qué hace con tu cuenta de Google</a>
+    </div>
+  </section>
+
+  <section class="envoltura seccion" aria-labelledby="que-hace">
+    <h2 id="que-hace">Qué hace Eco</h2>
+    <p>Funciona entre un teléfono Android y una laptop con Windows del mismo dueño. No tiene servidores en internet ni cuentas de usuario.</p>
+    <div class="tarjetas">
+      <article class="tarjeta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+        <h3>Guarda momentos</h3>
+        <p>Con un botón guarda los últimos minutos que escuchó el teléfono. Sin tocarlo, nada se graba ni se guarda.</p>
+      </article>
+      <article class="tarjeta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg>
+        <h3>Anota lo importante</h3>
+        <p>Transcribe en la laptop y saca tareas, fechas, datos e ideas. Avisa por un bot privado de Telegram.</p>
+      </article>
+      <article class="tarjeta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+        <h3>Classroom y Calendar</h3>
+        <p>Lee las tareas de Google Classroom y pone los pendientes con fecha en un calendario propio llamado «Eco».</p>
+      </article>
+      <article class="tarjeta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <h3>Todo en tu laptop</h3>
+        <p>Las notas y la base de datos viven en la laptop del dueño. No se venden, no se comparten y no hay anuncios.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="envoltura seccion" id="google" aria-labelledby="titulo-google">
+    <h2 id="titulo-google">Qué hace con tu cuenta de Google</h2>
+    <p>Eco pide solo estos permisos, y los usa solo para lo que dice cada uno. Puedes quitarlos cuando quieras desde <a href="https://myaccount.google.com/permissions">tu cuenta de Google</a>.</p>
+    <ul class="permisos">
+      <li><strong>Ver tus clases de Google Classroom</strong><span>Para saber de qué clase es cada tarea.</span><code>classroom.courses.readonly</code></li>
+      <li><strong>Ver tus trabajos de Classroom y su estado de entrega</strong><span>Para mostrar tus tareas pendientes con su fecha y marcarlas como hechas cuando las entregas. Eco no usa tus calificaciones ni entrega nada por ti.</span><code>classroom.coursework.me.readonly</code></li>
+      <li><strong>Crear un calendario propio y manejar sus eventos</strong><span>Eco crea un calendario llamado «Eco» y solo toca los eventos de ese calendario. No ve ni cambia tus otros calendarios.</span><code>calendar.app.created</code></li>
+      <li><strong>Tu correo electrónico</strong><span>Para mostrar en el panel con qué cuenta está conectado.</span><code>openid · email</code></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="envoltura">
+    <span>© 2026 Leonardo Vega · Black Hole Code</span>
+    <nav aria-label="Legal">
+      <a href="privacidad.html">Política de privacidad</a>
+      <a href="terminos.html">Términos del servicio</a>
+      <a href="mailto:leonardovega2331@gmail.com">Contacto</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
